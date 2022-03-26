@@ -1,0 +1,18 @@
+# eureka client
+server:
+  port: 9001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7002/eureka
+      
+      
+      
+      
+# actuator lib set
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, info
